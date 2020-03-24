@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ADMIN</title>
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!----다양한 브라우저 상호 운용성 테스트를 정기적으로 유지 관리--->
+        <meta http-equiv="Content-type" content="text/html; charset=euc-kr">
+        <meta http-equiv="imagetoolbar" content="no" /> <!---이미지저장박스 안뜨도록--->
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="pragma" content="no-cache" /> <!---캐쉬가 되지 않도록한다--->
+		
+		<!-- 폰트어썸 -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <!-- 구글 차트 -->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <!-- jquery calender -->
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="./jquery-ui-1.12.1/datepicker-ko.js"></script>
+        <!-- stylesheet -->
+		<link rel="stylesheet" href="css/style.css">
+        <!-- jquery -->
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css" type="text/css">
+        <!-- script -->
+		<script src="//code.jquery.com/jquery-latest.min.js"></script>
+        <script src="//code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+        <script src="js/script.js"></script>
+		<!-- js -->		
+		<!-- js -->
+	</head>
+	
+	<body>
+        <!--{ wrap-->
+        <div class="warp">
+            <!-- header {-->
+            <div class="header">
+                <div class="header_logo"><a href="#">admin</a></div>
+                <div class="header_menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="header_text">
+                    <div>
+                        <ul>
+                            <li><a href="#"><img src="images/icon_search.png" alt="icon_search"></a></li>
+                            <li>admin</li>
+                            <li>로그아웃</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            <!--} header -->
+            
+            <!--{ left_header-->
+            <div class="header_left">
+                <div class="left_menu">
+                    <p class="l_menu">
+                        <i class="fas fa-user-alt"></i>회원관리
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </p>
+                    <div class="l_i_m">
+                        <div>
+                            <ul>
+                                <li><a href="#">회원관리</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <p class="l_menu">
+                        <i class="fas fa-info-circle"></i>공지사항
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </p>
+                    <div class="l_i_m">
+                        <div>
+                            <ul>
+                                <li><a href="#">공지사항</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p class="l_menu">
+                        <i class="fas fa-columns"></i>배너관리
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </p>
+                    <div class="l_i_m">
+                        <div>
+                            <ul>
+                                <li><a href="#">배너수정</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p class="l_menu">
+                        <i class="fas fa-book"></i>메뉴관리
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </p>
+                    <div class="l_i_m">
+                        <div>
+                            <ul>
+                                <li><a href="#">메뉴수정</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p class="l_menu">
+                        <i class="fas fa-edit"></i>문의내용
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </p>
+                    <div class="l_i_m">
+                        <div>
+                            <ul>
+                                <li><a href="#">내용수정</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p class="l_menu">
+                        <i class="fas fa-chalkboard"></i>게시판관리
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </p>
+                    <div class="l_i_m">
+                        <div>
+                            <ul>
+                                <li><a href="#">게시판수정</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p class="l_menu">
+                        <i class="fas fa-upload"></i>팝업관리
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </p>
+                    <div class="l_i_m">
+                        <div>
+                            <ul>
+                                <li><a href="#">팝업수정</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--} left_header-->
+
+            <!--{ content -->    
+            <div class="content">
+                <div class="c_top_text">
+                    <h2><i class="fas fa-list-ul"></i>Board</h2>
+                </div>
+            
+                <div class="c_middle c_board">
+
+                    <div class="cb_list">
+                        <div class="cb_top">
+                            <ul>
+                                <li class="cbt_subject">공지사항</li>
+                                <li class="cbt_more"><a href="#"><i class="fas fa-plus-square"></i></a></li>
+                            </ul>
+                        </div>
+    
+                        <div class="cb_content">
+                          <ul>
+                              <li class="cbc_subject"><a href="#">(주)예원M&amp;D 홈페이지 오픈안내</a></li>
+                              <li class="cbc_date"><a href="#">2020-03-23</a></li>
+                          </ul>  
+                        </div>
+                    </div>
+                    
+                    <div class="visitor_list">
+                        <div id='v_chart' style='width: 900px; height: 500px;'></div>
+                    </div>
+
+                    <div class="customer_list">
+                        <div class="cl_top">
+                            <ul>
+                                <li>1:1 문의사항</li>
+                                <li><a href="#"><i  class="fas fa-plus-square"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="cl_content">
+                            <ul>
+                                <li><a href="">1:1 문의사항 접수합니다.</a></li>
+                                <li><a href="">2020-03-24</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="board_list">
+                        <div class="bl_top">
+                            <ul>
+                                <li>게시판관리</li>
+                                <li><a href="#"><i  class="fas fa-plus-square"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="bl_content">
+                            <ul>
+                                <li><a href="">게시판 관리 목차입니다. </a></li>
+                                <li><a href="">2020-03-24</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                   <div class="memo_list">
+                    <form> 
+                        <label for="note_color">색상:</label> 
+                        <select id="note_color"> 
+                            <option value="LightGoldenRodYellow">노란색</option>    <!-- #fafad2 --> 
+                            <option value="PaleGreen">녹색</option>    <!-- #98fb98 --> 
+                            <option value="LightPink">분홍</option>    <!-- #ffb6c1 --> 
+                            <option value="LightBlue">파란색</option>    <!-- #add8e6 --> 
+                        </select> 
+                        <label for="note_text">메모: </label><input type="text" id="note_text"> 
+                        <input type="button" id="add_button" value="스티키 노트 추가"> 
+                         
+                        <ul id="stickies"> 
+                        </ul> 
+                    </form> 
+                   </div>
+
+                   <div class="calender">
+
+                    <input type="text" name="date" id="date3" size="12" />
+                    <input type="button" value="달력" onclick="$('#date3').datepicker('show');" />
+                    
+                   </div>
+
+
+                   <!-- <script type="text/javascript">
+                    //기본사용
+                    $(function(){
+                        $("#date1").datepicker(); 
+                    });   
+
+                    </script> -->
+                    <script type="text/javascript">
+
+                        $(function(){
+                        
+                            $("#date3").datepicker({
+                        
+                                onSelect:function(dateText, inst) {
+                        
+                                    console.log(dateText);
+                                    
+                        
+                                }
+                        
+                            });
+
+                            $("#date3").datepicker({
+                                showOn: "both",
+                                changeYear:true,
+                                changeMonth:true,
+
+
+                        });
+
+                        
+                        });
+                        
+                        </script>
+                        
+
+                        
+                        
+                        
+
+                        
+                        
+                        
+                        
+                    
+
+ 
+
+
+
+
+                </div>
+                <!--{ content footer 포함-->
+
+                <!--{ footer-->    
+                <div class="footer">
+                    <div class="ft_txt">
+                        ADMIN V 1.0
+                    </div>
+                </div>
+                <!--} footer-->
+                <!--} content footer 포함-->
+            </div>
+            <!--} content -->
+
+        </div>
+        <!--} wrap-->
+	</body>
+	
+</html>

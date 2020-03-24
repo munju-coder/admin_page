@@ -1,0 +1,48 @@
+/*admin common sheet*/
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic|Noto+Sans+KR:400,700,900&display=swap');
+body { margin:0px;padding:0px;background-color:#ffffff; 
+ font-family: 'Noto Sans KR', sans-serif;
+ font-family: 'Nanum Gothic', sans-serif;
+ font-size:12px; color:#333; }
+a { text-decoration:none; color: #333; }
+a:active, a:visited { text-decoration:none; }
+ul { list-style:none; }
+ul, li, p {margin:0px;padding:0px;}
+select, input[type=submit], input[type=button] { cursor:pointer; }
+table { width:100%;border: 1px solid #9e9e9e;border-collapse: collapse;}
+table th, td { border: 1px solid #9e9e9e;padding: 7px; color:#333; }
+.cursor { cursor:pointer; }
+
+/*wrap*/
+.wrap {width:1900px;min-height:900px;overflow:hidden;}
+
+/*wrap*/
+ul#stickies li {
+    display: block;
+    list-style: none;
+    z-index: 1;
+    float: left;
+    margin: 30px;
+    padding: 15px 15px 50px 15px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #bfbfbf;
+    background-color:  LightGoldenRodYellow; /* 색상명 값이 맞지 않을 땐 #fafad2 */
+    color: black;
+    text-decoration: none;
+    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    -o-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    overflow: hidden;
+   }
+
+/*datepicer 버튼 롤오버 시 손가락 모양 표시*/
+.ui-datepicker-trigger{cursor: pointer;}
+/*datepicer input 롤오버 시 손가락 모양 표시*/
+.hasDatepicker{cursor: pointer;}
