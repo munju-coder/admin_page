@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ADMIN</title>
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!----다양한 브라우저 상호 운용성 테스트를 정기적으로 유지 관리--->
+        <meta http-equiv="Content-type" content="text/html; charset=euc-kr">
+        <meta http-equiv="imagetoolbar" content="no" /> <!---이미지저장박스 안뜨도록--->
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="pragma" content="no-cache" /> <!---캐쉬가 되지 않도록한다--->
+		
+		<!-- 폰트어썸 -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <!-- 구글 차트 -->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <!-- jquery calender -->
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="./jquery-ui-1.12.1/datepicker-ko.js"></script>
+        <!-- stylesheet -->
+		<link rel="stylesheet" href="css/style.css">
+        <!-- jquery -->
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css" type="text/css">
+        <!-- script -->
+		<script src="//code.jquery.com/jquery-latest.min.js"></script>
+        <script src="//code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+        <script src="js/script.js"></script>
+
+
+    </head>
+    <style>
+        .header_left{ margin-top: 10%; margin-left: 10%; }
+        .header_left .l_menu { margin-bottom: 15px; cursor: pointer; }
+        .sub_menu { display: none; margin-bottom: 15px; }
+
+        
+        
+    </style>
+    <script>
+        $(document).ready( function(){
+
+            $('.l_menu').click( function(){
+
+                if ($(this).next().css("display") == "none"){
+                    $('.sub_menu').hide();
+                    $(this).next().show();
+                    $(this).children("i:eq(1)").attr("class","fa fa-angle-up");
+                }else{
+                    
+                    $(this).next().hide();
+                    $(this).children("i:eq(1)").attr('class', 'fa fa-angle-down');
+                }
+
+            });
+        });
+
+    </script>
+	
+	<body>
+        <div class="header_left">
+            <div class="left_menu">
+                <div class="l_menu">
+                    <i class="fas fa-user-alt"></i>회원관리
+                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </div>
+                <div class="sub_menu">
+                    <ul>
+                        <li><a href="#">회원관리</a></li>
+                    </ul>
+                </div>
+
+                <div class="l_menu">
+                    <i class="fas fa-user-alt"></i>메뉴관리
+                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </div>
+                <div class="sub_menu">
+                    <ul>
+                        <li><a href="#">메뉴수정</a></li>
+                    </ul>
+                </div>
+
+                <div class="l_menu">
+                    <i class="fas fa-user-alt"></i>팝업관리
+                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </div>
+                <div class="sub_menu">
+                    <ul>
+                        <li><a href="#">팝업추가</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+	</body>
+	
+</html>

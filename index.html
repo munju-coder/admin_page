@@ -27,31 +27,36 @@
 		<script src="//code.jquery.com/jquery-latest.min.js"></script>
         <script src="//code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
         <script src="js/script.js"></script>
-		<!-- js -->		
-		<!-- js -->
+	
+
 	</head>
 	
 	<body>
         <!--{ wrap-->
-        <div class="warp">
+        <div class="wrap">
             <!-- header {-->
             <div class="header">
-                <div class="header_logo"><a href="#">admin</a></div>
-                <div class="header_menu">
-                    <i class="fas fa-bars"></i>
-                </div>
-                <div class="header_text">
-                    <div>
-                        <ul>
-                            <li><a href="#"><img src="images/icon_search.png" alt="icon_search"></a></li>
-                            <li>admin</li>
-                            <li>로그아웃</li>
-                        </ul>
+                <div class="header_wrap">
+                    <div class="header_logo"><a href="#">admin</a></div>
+                    <!-- <div class="header_menu">
+                        <i class="fas fa-bars"></i>
+                    </div> -->
+                    <div class="header_text">
+                        <div>
+                            <ul>
+                                <li><a href=""><img src="images/icon_search.png" alt="icon_search"></a></li>
+                                <li><a href="#">admin</a></li>
+                                <li><a href="#">로그아웃</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                
             </div>
             <!--} header -->
+
+            <style>
+                /* .sub_menu {display: none;} */
+            </style>
             
             <!--{ left_header-->
             <div class="header_left">
@@ -60,84 +65,70 @@
                         <i class="fas fa-user-alt"></i>회원관리
                         <i class="fas fa-angle-down" aria-hidden="true"></i>
                     </p>
-                    <div class="l_i_m">
-                        <div>
-                            <ul>
-                                <li><a href="#">회원관리</a></li>
-                            </ul>
-                        </div>
+                    <div class="sub_menu">
+                        <ul>
+                            <li><a href="#">회원관리</a></li>
+                        </ul>
                     </div>
-                    
+
                     <p class="l_menu">
                         <i class="fas fa-info-circle"></i>공지사항
                         <i class="fas fa-angle-down" aria-hidden="true"></i>
                     </p>
-                    <div class="l_i_m">
-                        <div>
-                            <ul>
-                                <li><a href="#">공지사항</a></li>
-                            </ul>
-                        </div>
+                    <div class="sub_menu">
+                        <ul>
+                            <li><a href="#">공지사항</a></li>
+                        </ul>
                     </div>
 
                     <p class="l_menu">
                         <i class="fas fa-columns"></i>배너관리
                         <i class="fas fa-angle-down" aria-hidden="true"></i>
                     </p>
-                    <div class="l_i_m">
-                        <div>
-                            <ul>
-                                <li><a href="#">배너수정</a></li>
-                            </ul>
-                        </div>
+                    <div class="sub_menu">
+                        <ul>
+                            <li><a href="#">배너수정</a></li>
+                        </ul>
                     </div>
 
                     <p class="l_menu">
                         <i class="fas fa-book"></i>메뉴관리
                         <i class="fas fa-angle-down" aria-hidden="true"></i>
                     </p>
-                    <div class="l_i_m">
-                        <div>
-                            <ul>
-                                <li><a href="#">메뉴수정</a></li>
-                            </ul>
-                        </div>
+                    <div class="sub_menu">
+                        <ul>
+                            <li><a href="#">메뉴수정</a></li>
+                        </ul>
                     </div>
 
                     <p class="l_menu">
                         <i class="fas fa-edit"></i>문의내용
                         <i class="fas fa-angle-down" aria-hidden="true"></i>
                     </p>
-                    <div class="l_i_m">
-                        <div>
-                            <ul>
-                                <li><a href="#">내용수정</a></li>
-                            </ul>
-                        </div>
+                    <div class="sub_menu">
+                        <ul>
+                            <li><a href="#">내용수정</a></li>
+                        </ul>
                     </div>
 
                     <p class="l_menu">
                         <i class="fas fa-chalkboard"></i>게시판관리
                         <i class="fas fa-angle-down" aria-hidden="true"></i>
                     </p>
-                    <div class="l_i_m">
-                        <div>
-                            <ul>
-                                <li><a href="#">게시판수정</a></li>
-                            </ul>
-                        </div>
+                    <div class="sub_menu">
+                        <ul>
+                            <li><a href="#">게시판수정</a></li>
+                        </ul>
                     </div>
 
                     <p class="l_menu">
                         <i class="fas fa-upload"></i>팝업관리
                         <i class="fas fa-angle-down" aria-hidden="true"></i>
                     </p>
-                    <div class="l_i_m">
-                        <div>
-                            <ul>
-                                <li><a href="#">팝업수정</a></li>
-                            </ul>
-                        </div>
+                    <div class="sub_menu">
+                        <ul>
+                            <li><a href="#">팝업수정</a></li>
+                        </ul>
                     </div>
 
                 </div>
@@ -147,7 +138,7 @@
             <!--{ content -->    
             <div class="content">
                 <div class="c_top_text">
-                    <h2><i class="fas fa-list-ul"></i>Board</h2>
+                    <h2><i class="fas fa-list-ul cursor"></i>Board</h2>
                 </div>
             
                 <div class="c_middle c_board">
@@ -169,9 +160,52 @@
                     </div>
                     
                     <div class="visitor_list">
-                        <div id='v_chart' style='width: 900px; height: 500px;'></div>
+                        <div id="chart_div"></div>
                     </div>
 
+                    <style>
+                        
+                        #chart_div {width:620px;height:290px; margin-top:2%;}
+                        /*header*/
+                        .wrap .header { background-color: #3c56c4; height: 70px; }
+                        .wrap .header .header_wrap { width: 100%; max-width: 1820px; margin: 0 auto; overflow: hidden; }
+                        .wrap .header .header_logo { float: left; width: 100px; height: 50px; padding-top: 20px; text-align: center; }
+                        .wrap .header::after { content: ''; display: block; overflow: hidden; clear: both; }
+                        .wrap .header .header_logo a { font-size: 24px; color: #ffffff; font-weight: bold; }
+                        .wrap .header .header_text { float: left; width: 85%; height: 23px; padding-top: 25px; font-weight: 600; }
+                        .wrap .header .header_text ul { overflow: hidden; float: right; }
+                        .wrap .header .header_text div { overflow: hidden; }
+                        .wrap .header .header_text div ul li { float: left; }
+                        .wrap .header .header_text div ul::after { content: ''; display: block; overflow: hidden; clear: both; }
+                        .wrap .header .header_text div ul li a img { width: 28%; }
+                        .wrap .header .header_text div a { color: white; font-size: 16px; font-weight: bold; margin-right: 40px; }
+                        
+                        /*header_left*/
+                        .wrap .header_left { width: 200px; height: 100%; padding-top: 20px; min-height: 840px; background-color:white; color: rgb(51, 51, 51); float: left; }
+                        .wrap .header_left .left_menu .l_menu { font-size: 16px; font-weight: 600; text-align: center; margin: 10px 0; }
+                        .wrap .header_left .left_menu .sub_menu { text-align: center; }
+                        .wrap .header_left .left_menu .sub_menu ul li { padding: 5px; }
+                        .wrap .header_left .left_menu .sub_menu ul li a { font-size: 14px; font-weight: 600; color: #828282; }
+                        .wrap .header_left .left_menu .l_menu i { margin-right: 5px; }
+                        .wrap .header_left .left_menu .l_menu .fa-angle-down { margin-left: 5px; }
+                        .wrap::after { content: ''; display: block; overflow: hidden; clear: both; }
+
+                        /*content*/
+                        .wrap .content { float: left; width: 1662px; height: 851px; padding-left: 2%; background-color: #d5d6db; }
+                        .wrap .content h2 i { margin-right: 10px; }
+                        .wrap .content .cb_list { width: 620px; height: 290px; background-color: white;  padding:1%; box-sizing: border-box; }
+                        .wrap .content .cb_list .cb_top { font-size: 17px;margin-bottom: 10px;border-bottom: 1px solid #ddd;padding-bottom: 10px;}
+                        .wrap .content .cb_list .cb_top ul li { float: left; /*! font-size: ; */}
+                        .wrap .content .cb_list .cb_top ul li:first-child { width: 50%; }
+                        .wrap .content .cb_list .cb_top ul li:last-child {float:right;}
+                        .wrap .content .cb_list .cb_top ul li i { color: #3c56c4; }
+                        .wrap .content .cb_list .cb_top ul::after { content: ''; display: block; overflow: hidden; clear: both; }
+                        .wrap .content .cb_list .cb_content ul li { float: left; font-size: 14px;}
+                        .wrap .content .cb_list .cb_content ul li:first-child { margin-right: 50%; }
+                        .wrap .content .cb_list .cb_content ul::after { content: ''; display: block; overflow: hidden; clear: both; }
+
+        
+                    </style>
                     <div class="customer_list">
                         <div class="cl_top">
                             <ul>
@@ -204,14 +238,14 @@
                         </div>
                     </div>
 
-                   <div class="memo_list">
+                   <!-- <div class="memo_list">
                     <form> 
                         <label for="note_color">색상:</label> 
                         <select id="note_color"> 
-                            <option value="LightGoldenRodYellow">노란색</option>    <!-- #fafad2 --> 
-                            <option value="PaleGreen">녹색</option>    <!-- #98fb98 --> 
-                            <option value="LightPink">분홍</option>    <!-- #ffb6c1 --> 
-                            <option value="LightBlue">파란색</option>    <!-- #add8e6 --> 
+                            <option value="LightGoldenRodYellow">노란색</option>    
+                            <option value="PaleGreen">녹색</option>    
+                            <option value="LightPink">분홍</option>    
+                            <option value="LightBlue">파란색</option>    
                         </select> 
                         <label for="note_text">메모: </label><input type="text" id="note_text"> 
                         <input type="button" id="add_button" value="스티키 노트 추가"> 
@@ -219,66 +253,32 @@
                         <ul id="stickies"> 
                         </ul> 
                     </form> 
-                   </div>
+                   </div> -->
 
-                   <div class="calender">
-
-                    <input type="text" name="date" id="date3" size="12" />
-                    <input type="button" value="달력" onclick="$('#date3').datepicker('show');" />
-                    
-                   </div>
-
-
-                   <!-- <script type="text/javascript">
-                    //기본사용
-                    $(function(){
-                        $("#date1").datepicker(); 
-                    });   
-
-                    </script> -->
-                    <script type="text/javascript">
-
-                        $(function(){
-                        
-                            $("#date3").datepicker({
-                        
-                                onSelect:function(dateText, inst) {
-                        
-                                    console.log(dateText);
-                                    
-                        
-                                }
-                        
-                            });
-
-                            $("#date3").datepicker({
-                                showOn: "both",
-                                changeYear:true,
-                                changeMonth:true,
-
-
-                        });
-
-                        
-                        });
-                        
-                        </script>
-                        
-
-                        
-                        
-                        
-
-                        
-                        
-                        
-                        
-                    
-
- 
-
-
-
+                   
+                   <!-- <table id="calendar" border="3" align="center" style="border-color:#454545 ">
+                       <tr>
+                           <td><label onclick="prevCalendar()">&lt;</label></td>
+                           <td align="center" id="tbCalendar" colspan="5">
+                           yyyy년 m월</td>
+                           <td><label onclick="nextCalendar()">>
+                               
+                           </label></td>
+                       </tr>
+                       <tr>
+                           <td class="sunday" align="center">일</td>
+                           <td align="center">월</td>
+                           <td align="center">화</td>
+                           <td align="center">수</td>
+                           <td align="center">목</td>
+                           <td align="center">금</td>
+                           <td class="saturday"align="center">토</td>
+                       </tr> 
+                   </table> -->
+                   
+                <!-- <script language="javascript" type="text/javascript">
+                 buildCalendar();//
+                </script> -->
 
                 </div>
                 <!--{ content footer 포함-->
