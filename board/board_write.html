@@ -12,22 +12,20 @@
 		
 		<!-- 폰트어썸 -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <!-- 구글 차트 -->
-        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <!-- jquery calender -->
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script src="./jquery-ui-1.12.1/datepicker-ko.js"></script>
         <!-- stylesheet -->
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="../css/style.css">
         <!-- jquery -->
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css" type="text/css">
         <!-- script -->
 		<script src="//code.jquery.com/jquery-latest.min.js"></script>
         <script src="//code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
-        <script src="js/script.js"></script>
-
+        <script src="../js/script.js"></script>
+        
 	</head>
 	
 	<body>
@@ -37,10 +35,6 @@
             <div class="header">
                 <div class="header_wrap">
                     <div class="header_logo"><a href="#">admin</a></div>
-                    <!-- <div class="header_menu">
-                        <i class="fas fa-bars"></i>
-                    </div> -->
-                    
                     <div class="header_text">
                         <div>
                             <ul>
@@ -132,61 +126,29 @@
 
             <!--{ content -->    
             <div class="content">
-
-            
-                <div class="c_middle">
-                    <div class="clt_txt c_margin">
-                        <h2><i class="fas fa-list-ul cursor"></i>Board</h2>
+                <div class="board_view">
+                    <div class="c_list">
+                        <div class="clt_txt">
+                            <a href="#">
+                                <h2><i class="fas fa-info-circle"></i>공지사항 수정</h2>
+                            </a>  
+                        </div>				
                     </div>
 
-                    <div class="cb_list">
-                        <div class="cb_top">
-                            <ul>
-                                <li class="cbt_subject">공지사항</li>
-                                <li class="cbt_more"><a href="#"><i class="fas fa-plus-square"></i></a></li>
-                            </ul>
-                        </div>
-    
-                        <div class="cb_content">
-                          <ul>
-                              <li class="cbc_subject"><a href="#">(주)예원M&amp;D 홈페이지 오픈안내</a></li>
-                              <li class="cbc_date"><a href="#">2020-03-23</a></li>
-                          </ul>  
-                        </div>
-                    </div>
                     
-                    <div class="visitor_list">
-                        <script src="js/googleChart.js"></script>
-                        <div id="chart_div"></div>
-                    </div>
-
-                    <div class="cb_list customer_list">
-                        <div class="cb_top cl_top">
-                            <ul>
-                                <li>1:1 문의사항</li>
-                                <li><a href="#"><i  class="fas fa-plus-square"></i></a></li>
-                            </ul>
-                        </div>
-
-                        <div class="cb_content cl_content">
-                            <ul>
-                                <li class="cbc_subject"><a href="">1:1 문의사항 접수합니다.</a></li>
-                                <li class="cbc_date"><a href="">2020-03-24</a></li>
-                            </ul>
-                        </div>
-                    </div>
 
                 </div>
-                <!--{ content footer 포함-->
-
                 <!--{ footer-->    
-                <div class="footer">
-                    <div class="ft_txt">ADMIN V 1.0</div>
-                </div>
-                <!--} footer-->
-                <!--} content footer 포함-->
+                    <div class="footer">
+                        <div class="ft_txt">
+                            ADMIN V 1.0
+                        </div>
+                    </div>
+                    <!--} footer-->
+                    <!--} content footer 포함-->                
+
             </div>
-            <!--} content -->
+            <!--{ content footer 포함-->
 
         </div>
         <!--} wrap-->
