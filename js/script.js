@@ -15,4 +15,19 @@
         }        
       });  
 
+      
+
     });
+    $("document").ready(function(){
+      //var l_height = $(".header_left").height();
+      var c_height = $(".content").height();
+
+      $(".header_left").css("height", c_height + "px");
+      /* console.log(l_height);
+      console.log(c_height); */
+
+      /* if(c_height > l_height)
+      {
+          $(".header_left").css("height", c_height + "px");
+      } */
+  });

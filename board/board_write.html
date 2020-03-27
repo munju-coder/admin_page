@@ -126,29 +126,108 @@
 
             <!--{ content -->    
             <div class="content">
-                <div class="board_view">
-                    <div class="c_list">
-                        <div class="clt_txt">
-                            <a href="#">
-                                <h2><i class="fas fa-info-circle"></i>공지사항 수정</h2>
-                            </a>  
-                        </div>				
-                    </div>
-
-                    
-
-                </div>
-                <!--{ footer-->    
-                    <div class="footer">
-                        <div class="ft_txt">
-                            ADMIN V 1.0
+                <div class="b_wrap">
+                    <div class="board_view">
+                        <div class="c_list c_margin">
+                            <div class="clt_txt">
+                                <a href="#">
+                                    <h2><i class="fas fa-info-circle"></i>공지사항 수정</h2>
+                                </a>  
+                            </div>				
                         </div>
-                    </div>
-                    <!--} footer-->
-                    <!--} content footer 포함-->                
 
+                        <style>
+                            .b_wrap { width: 90%; max-width: 1547px; }
+                            .tr_bg { background-color: #5d6c82; color: white; border-right: 1px solid #b3b3b3; }
+                            td { background-color: #f2f2f2;}
+                            .b_info tr:first-child { border-bottom: 1px solid #b3b3b3; }
+                            .b_info, .b_txt { margin-bottom: 3%; }
+                            .b_txt textarea { width: 100%; } 
+
+
+                        </style>
+
+                        <div class="b_info">
+                            <h3><i class="fas fa-info"></i>&nbsp;&nbsp;&nbsp;기본 정보</h3>
+                            <table>
+                                <colgroup>
+                                    <col width="10%">
+                                    <col width="40%">
+                                    <col width="10%">
+                                    <col width="40%">
+                                </colgroup>
+
+                                <tbody>
+                                    <tr>
+                                        <th class="tr_bg">MB_ID</th>
+                                        <td>
+                                            <input class="i_w_20" type="text">
+                                        </td>
+
+                                        <th class="tr_bg">제목</th>
+                                        <td>
+                                            <input class="i_w_98" type="text" value="">
+                                        </td>
+                                    </tr>
+
+                                
+                                    <tr>
+                                        <th class="tr_bg">노출여부</th>
+                                        <td>
+                                        <input type="radio" id="APPROVAL" name="APPROVAL" value="Y" checked="">Y
+                                        <input type="radio" id="APPROVAL" name="APPROVAL" value="N">N
+                                        </td>
+                                    
+                                        <th class="tr_bg">공지여부</th>
+                                        <td>
+                                            <input type="radio" id="NOTICE" name="NOTICE" value="Y">Y
+                                            <input type="radio" id="NOTICE" name="NOTICE" value="N" checked="">N
+                                        </td>
+                                    </tr>
+                                </tbody>
+                             </table>
+                        </div>
+
+                        <div class="b_txt">
+                            <h3><i class="fas fa-file-alt"></i>&nbsp;&nbsp;&nbsp;내용</h3>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+
+                        </div>
+
+                        <div class="b_register">
+                            <h3><i class="fas fa-info"></i>&nbsp;&nbsp;&nbsp;등록일 / 수정일</h3>
+                            <table>
+                                <colgroup>
+                                    <col width="10%">
+                                    <col width="40%">
+                                    <col width="10%">
+                                    <col width="40%">
+                                </colgroup>
+
+                                <tbody>
+                                    <tr>
+                                        <th class="tr_bg txt_l txt_c_4584f7">MB_ID</th>
+                                        <td>
+                                            <input class="i_w_50" type="text" id="MB_ID" name="MB_ID" value="admin">
+                                        </td>
+
+                                        <th class="tr_bg txt_l txt_c_4584f7">제목</th>
+                                        <td>
+                                            <input class="i_w_50" type="text" id="MB_ID" name="MB_ID" value="admin">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                             </table>
+                             <div class="text_r" style="margin-top: 10px;">
+                                <input class="btn_submit cursor" id="fb_s_btn" value="수정" type="submit">
+                                <input class="btn_submit btns_d cursor" id="fb_s_btn" value="취소" type="submit">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <!--{ content footer 포함-->
+            <!--{ content-->
 
         </div>
         <!--} wrap-->
