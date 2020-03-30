@@ -22,8 +22,8 @@
         <!-- jquery -->
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css" type="text/css">
         <!-- script -->
-		<script src="//code.jquery.com/jquery-latest.min.js"></script>
-        <script src="//code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <!-- <script src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script> -->
         <script src="../js/script.js"></script>
         
 	</head>
@@ -34,14 +34,11 @@
             <!-- header {-->
             <div class="header">
                 <div class="header_wrap">
-                    <div class="header_logo"><a href="#">admin</a></div>
-                    <!-- <div class="header_menu">
-                        <i class="fas fa-bars"></i>
-                    </div> -->
+                    <div class="header_logo"><a href="../index.html">admin</a></div>
                     <div class="header_text">
                         <div>
                             <ul>
-                                <li><a href="#">admin1</a></li>
+                                <li><a href="#">admin</a></li>
                                 <li><a href="#">로그아웃</a></li>
                             </ul>
                         </div>
@@ -69,7 +66,7 @@
                     </p>
                     <div class="sub_menu">
                         <ul>
-                            <li><a href="#">공지사항</a></li>
+                            <li><a href="../board/board_list.html">공지사항</a></li>
                         </ul>
                     </div>
 
@@ -137,13 +134,7 @@
                                 <h2><i class="fas fa-info-circle"></i>공지사항 리스트</h2>
                             </a>  
                         </div>
-                        
-                        <!-- <script>
-                            $("document").ready(function(){
-                                var c_height = $(".content").height();            
-                                $(".header_left").css("height", c_height + "px");
-                            });
-                        </script> -->
+
                         <div class="clm_box">
                             <div class="id_search">
                                 <form name="search" id="search">	
@@ -189,29 +180,31 @@
                                 
                                     <tr class="bgw cursor text_c">
                                         <td class=""><input type="checkbox" id="chk_0" name="chk[]" value=""></td>
-                                        <td class="">1</td>
+                                        <td class="seq">1</td>
                                         <td class="">admin</td>
                                         <td class="text_c">(주)예원M&amp;D 홈페이지 오픈안내1</td>
                                         <td class="">2020-03-19</td>
                                         <td class="">
-                                            <input class="btn_submit cursor" id="fb_s_btn" value="수정" type="submit">
+                                            <input class="btn_submit btn_m cursor" id="fb_s_btn" value="수정" type="submit">
                                             <input class="btn_submit btns_d cursor" id="fb_s_btn" value="삭제" type="submit">
                                         </td>
                                     </tr>  
                                     <tr class="bgw cursor text_c">
                                         <td class=""><input type="checkbox" id="chk_0" name="chk[]" value=""></td>
-                                        <td class="">2</td>
+                                        <td class="seq">2</td>
                                         <td class="">sub_admin</td>
                                         <td class="text_c">(주)예원M&amp;D 홈페이지 오픈안내2</td>
                                         <td class="">2020-03-20</td>
                                         <td class="">
-                                            <input class="btn_submit cursor" id="" value="수정" type="submit">
+                                            <input class="btn_submit btn_m cursor" id="" value="수정" type="submit">
                                             <input class="btn_submit btns_d cursor" id="" value="삭제" type="submit">
                                         </td>
                                     </tr>
                                     
                                 </tbody>	
                             </table>
+
+
 
                             <!--{ paging -->
                             <div class="paging">
@@ -237,8 +230,7 @@
                 </div>            
 
             </div>
-            <!--{ content footer 포함-->
-
+            <!--{ content -->
         </div>
         <!--} wrap-->
 	</body>
