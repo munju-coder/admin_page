@@ -15,19 +15,10 @@
         }        
       });  
 
-      
-
-    });
-    $("document").ready(function(){
-      //var l_height = $(".header_left").height();
+      //left header -> 높이 계산하여 적용.
       var c_height = $(".content").height();
 
       $(".header_left").css("height", c_height + "px");
-      /* console.log(l_height);
-      console.log(c_height); */
+      
 
-      /* if(c_height > l_height)
-      {
-          $(".header_left").css("height", c_height + "px");
-      } */
-  });
+    });
